@@ -1,0 +1,47 @@
+
+@import './var';
+@import './items';
+
+.background{
+    // padding: 10%;
+    background-color: $back;
+    width: 100%;
+    height: 1000px;
+}
+
+.row{
+    @include flexCenter(row);
+}
+
+.desc{
+    position: absolute;
+    left: 70%;
+    top: 50%;
+    color: $text;
+    font-size: 40px;
+}
+
+.header{
+    height: 900px;
+    width: 30%;
+    background-color: $fore;
+    padding-top: 10%;
+}
+
+@media screen and (max-width: 900px) {
+    .background{
+        @include flexCenter(column);
+    }
+    .header{
+        width: 100%;
+        height: 40%;
+        @include flexCenter(column); //fix later
+    }
+
+    .desc{
+        color: $text;
+        font-size: 20px;
+        left: 50%;
+        top: 90%;
+    }
+}
