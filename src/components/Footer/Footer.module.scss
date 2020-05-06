@@ -1,0 +1,10 @@
+@import "../../globalStyles";
+
+.main {
+  background-image: linear-gradient(to left, $themeColorMain, $themeColorMed);
+  height: 300px;
+}
+
+.text {
+  color: white;
+}
