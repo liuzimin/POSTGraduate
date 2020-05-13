@@ -1,0 +1,10 @@
+.main {
+  background-image: -webkit-gradient(linear, right top, left top, from(#1f16cb), to(rgba(31, 22, 203, 0.8)));
+  background-image: linear-gradient(to left, #1f16cb, rgba(31, 22, 203, 0.8));
+  height: 300px;
+}
+
+.text {
+  color: white;
+}
+/*# sourceMappingURL=Footer.module.css.map */

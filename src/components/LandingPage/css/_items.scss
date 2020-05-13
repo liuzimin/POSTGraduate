@@ -1,0 +1,49 @@
+@import './var';
+
+.item{
+    width: 300px;
+    height: 150px;
+    background-color: $fore2;
+    border-radius: 10px;
+    position: relative;
+    left: 50%;
+    margin: 5%;
+    transition: all 0.2s;
+    padding: 10px;
+    &:hover{
+        border-width: thin;
+        border-style: solid;
+        border-color: white;
+        left: 65%;
+        transition: all 0.2s;
+    }
+}
+
+.clicked{
+    border-width: thin;
+    border-style: solid;
+    border-color: white;
+    background-color: $text;
+    left: 65%;
+}
+
+@media screen and (max-width: 1000px) {
+    .item{
+        left: 40%;
+        width: 200px;
+        height: 125px;
+        transition: all 0.2s;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .item{
+        left: 0px;
+        width: 150px;
+        height: 75px;
+        transition: all 0.2s;
+        &:hover{
+            left: 0%;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,KAAK,CAAC;EACJ,gBAAgB,EAAE,yDAAyD;EAC3E,MAAM,EAAE,KAAK;CACd;;AAED,AAAA,KAAK,CAAC;EACJ,KAAK,EAAE,KAAK;CACb",
+    "sources": [
+        "Footer.module.scss",
+        "../../globalStyles.scss"
+    ],
+    "names": [],
+    "file": "Footer.module.css"
+}
