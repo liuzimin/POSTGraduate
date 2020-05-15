@@ -26,6 +26,7 @@ export default function ArticleBrowser() {
   return (
     <div className={styles.root}>
       <Grid
+        className={styles.container}
         container
         direction="row"
         justify="center"
@@ -34,7 +35,7 @@ export default function ArticleBrowser() {
         
       >
         <Grid item className={styles.test}> 
-          <Paper className={styles.test}>FIRST</Paper>
+          <Paper square className={[styles.paper, styles.topPaper].join(" ")}>FIRST</Paper>
         </Grid>
         <Grid item>
           <Grid
@@ -42,12 +43,13 @@ export default function ArticleBrowser() {
           direction="column"
           justify="flex-start"
           alignItems="center"
-          spacing={2}>
-            <Grid item>
-              <Paper>SALK</Paper>
+          spacing={0}
+          className={styles.secondaryContainer}>
+            <Grid item className={styles.secondary}>
+              <Paper square className={styles.paper}>SALK</Paper>
             </Grid>
-            <Grid item>
-              <Paper>SALik</Paper>
+            <Grid item className={styles.secondary}>
+              <Paper square className={styles.paper}>SALik</Paper>
             </Grid>
           </Grid>
         </Grid>

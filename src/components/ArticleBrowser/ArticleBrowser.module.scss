@@ -1,11 +1,33 @@
 @import "../../globalStyles.scss";
 
 .root { 
-
-  flex-grow: 1;
-  background-color: $themeColorMain;
-  pad: 100px;
+  overflow: hidden;
+  background-color: $themeColorLight;
+  padding: 10px;
+  justify-content: start;
 }
 .test { 
   height: 100%;
 }
+.paper { 
+  height: 39vh;
+  width: 30vw;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+.container { 
+  //height: 80vh;
+  width: 95vw;
+}
+.topPaper { 
+  height: 80vh; 
+  width: 65vw;
+
+}
+.secondary { 
+  height: 100%;
+}
+// .secondaryContainer { 
+//   height: 80vh;
+// }
+
