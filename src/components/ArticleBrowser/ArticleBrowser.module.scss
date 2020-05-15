@@ -1,0 +1,11 @@
+@import "../../globalStyles.scss";
+
+.root { 
+
+  flex-grow: 1;
+  background-color: $themeColorMain;
+  pad: 100px;
+}
+.test { 
+  height: 100%;
+}

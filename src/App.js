@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.scss";
 import Home from "./components/Home/Home";
 import Layout from "./components/Layout/Layout";
+import ArticleBrowser from "./components/ArticleBrowser/ArticleBrowser"
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
           </Route>
           <Route path="/dashboard">
             <div>dashboard</div>
+          </Route>
+          <Route path="/articles">
+            <ArticleBrowser />
           </Route>
         </Switch>
       </Layout>
