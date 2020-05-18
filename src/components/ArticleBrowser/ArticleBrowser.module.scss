@@ -2,9 +2,12 @@
 
 .root { 
   overflow: hidden;
-  background-color: $themeColorLight;
-  padding: 10px;
-  justify-content: start;
+  //padding: 20px;
+  //background-image: linear-gradient(to left, $themeColorMain, $themeColorMed);
+  //padding: 10px;
+  //display: flex;
+  //justify-content: center;
+  
 }
 .test { 
   height: 100%;
@@ -12,22 +15,61 @@
 .paper { 
   height: 39vh;
   width: 30vw;
-  margin-top: 1vh;
-  margin-bottom: 1vh;
+  margin: 1vh; 
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  min-width: 320px;
+  position: relative;
+  background-color: WHITE;
 }
 .container { 
   //height: 80vh;
+  //max-width: 1000px;
+  padding: 10px;
   width: 95vw;
+  background-image: linear-gradient(to left, $themeColorMain, $themeColorMed);
 }
 .topPaper { 
   height: 80vh; 
   width: 65vw;
-
+  min-width: 650px;
 }
 .secondary { 
   height: 100%;
 }
+
+.relativeDiv { 
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  color: white;
+  height: 100%;
+  pad: 10px;
+}
+// .fixedText { 
+//   z-index: 50;
+//   position: absolute;
+//   color: white;
+//   font-size: 24px;
+//   font-weight: bold;
+//   text-align: end;
+//   bottom: 0px; 
+//   left: 0px; 
+//   background: linear-gradient(to left, $themeColorMain, $themeColorMed);
+
+// }
+
 // .secondaryContainer { 
 //   height: 80vh;
 // }
+@media only screen and (max-width: 1064px) { 
+  .topPaper { 
+    padding-bottom: 0px;
+  }
+  .paper { 
+    padding: 0px; 
+    width:650px; 
+  }
+}
 
