@@ -64,16 +64,24 @@ export class LandingPage extends Component {
       <div className="background">
         <Grid container spacing={3}>
           <div className="header">
-            {this.state.clicked.map((values, index) => (
-              <div onClick={() => this.click(index)}>
-                <Item id={index} clicked={this.state.clicked[index]}></Item>
+            <div className="row">
+              <div onClick={() => this.click(0)}>
+                <Item id={0} desc = "Runeterra" clicked={this.state.clicked[0]}></Item>
               </div>
-            ))}
+              <div onClick={() => this.click(1)}>
+                <Item id={1} desc = "League of Legends" clicked={this.state.clicked[1]}></Item>
+              </div>
+            </div>
+            <div onClick={() => this.click(2)}>
+              <Item id={2} desc = "Teamfight Tactics" clicked={this.state.clicked[2]}></Item>
+            </div>
+
             <div className="desc">
               <div className="title_o">{this.state.title_o}</div>
               <div className="title_w">{this.state.title_w}</div>
               <div className="body">{this.state.body}</div>
-              <ColorButton variant="contained"
+              <ColorButton
+                variant="contained"
                 color="primary"
                 className="button"
               >

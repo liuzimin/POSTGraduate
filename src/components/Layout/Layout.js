@@ -7,7 +7,7 @@ function Layout(props) {
   return (
     <>
       <TransparentAppBar></TransparentAppBar>
-      <div>{props.children}</div>
+      <div style = {{marginTop: "-100px"}}>{props.children}</div>
       <Footer className={styles.main}></Footer>
     </>
   );

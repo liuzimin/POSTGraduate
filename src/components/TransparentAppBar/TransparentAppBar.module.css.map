@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,KAAK,CAAC;EACJ,UAAU,EAAE,aAAa;EACzB,UAAU,EAAE,MAAM;CACnB",
+    "mappings": "AAAA,AAAA,KAAK,CAAC;EACJ,UAAU,EAAE,aAAa;EACzB,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,MAAM;CACnB",
     "sources": [
         "TransparentAppBar.module.scss"
     ],

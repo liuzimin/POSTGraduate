@@ -10,7 +10,7 @@
 }
 
 .row{
-    @include flexCenter(row);
+    @include flexCenter(column);
 }
 
 .desc{
@@ -46,7 +46,7 @@
     height: 900px;
     width: 25%;
     background-color: $fore;
-    padding-top: 7%;
+    padding-top: 200px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -76,11 +76,7 @@
     }
 }
 
-<<<<<<< Updated upstream
-@media screen and (max-width: 500px) {
-=======
 @media screen and (max-width: 700px) {
->>>>>>> Stashed changes
     .background{
         @include flexCenter(column);
     }
@@ -88,6 +84,12 @@
         width: 100%;
         height: 600px;
         @include flexCenter(column); //fix later
+    }
+    .row{
+        @include flexCenter(row);
+        display: grid;
+        justify-items: end;
+      grid-template-columns: 45% 55%;
     }
 
     .desc{
@@ -97,6 +99,8 @@
         left: 0%;
         position: relative;
         top: 0px;
+        
+    flex-wrap: wrap;
         text-align: center;
         padding-top: 30px;
         .title_o{
@@ -116,4 +120,13 @@
     }
 }
 
-
+@media screen and (max-width: 500px) {
+    .desc{
+        .title_o{
+            font-size: 20px;
+        }
+        .title_w{
+            font-size: 20px;
+        }
+    }
+}
